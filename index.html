@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>Ratcity</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="javascripts/jquery-3.1.1.js" charset="utf-8"></script> -->
+    <style media="screen">
+
+.red{
+  color: #C75353;
+
+}
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(function() {
+      	$('.sidebar a').each(function() {
+      		$(this).on('click', function(e) {
+      			e.preventDefault();
+      			var scrollTo = $(this).attr('href');
+      			var whitespace = scrollTo == '#afishaa' ? 70 : 30;
+      			$('html,body').animate({
+      				scrollTop: $(scrollTo).offset().top - whitespace
+      			}, 1000);
+      		});
+      	});
+      });
+
+      //
+      ///
+      $(".ny").click(function(){
+        $(this).addClass("red")
+        $(".p_1").attr("id", "ny_01");
+        $(".p_2").attr("id", "ny_02");
+        $(".p_3").attr("id", "ny_03");
+      })
+      $(".a").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "a_1");
+        $(".p_2").attr("id", "a_2");
+        $(".p_3").attr("id", "a_3");
+      })
+      $(".de").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "de_01");
+        $(".p_2").attr("id", "de_02");
+        $(".p_3").attr("id", "de_03");
+      })
+      $(".v").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "v_01");
+        $(".p_2").attr("id", "v_02");
+        $(".p_3").attr("id", "v_03");
+      })
+
+
+      $(".rd").click(function(){
+        $(this).addClass("red")
+
+        $(".p_p_1").attr("id", "rd_01");
+        $(".p_p_2").attr("id", "rd_02");
+        $(".p_p_3").attr("id", "rd_03");
+      })
+      $(".b").click(function(){
+        $(this).addClass("red")
+
+        $(".p_p_1").attr("id", "b1");
+        $(".p_p_2").attr("id", "b2");
+        $(".p_p_3").attr("id", "b3");
+      })
+      $(".nb").click(function(){
+        $(this).addClass("red")
+
+        $(".p_p_1").attr("id", "lost");
+        $(".p_p_2").attr("id", "nb_01");
+        $(".p_p_3").attr("id", "lost");
+      })
+      $(".sh").click(function(){
+        let url = "project.html";
+        location.href = "project.html";
+
+      })
+      })
+    </script>
+  </head>
+  <body>
+
+    <nav>
+      <div class="line">
+          <a class="logo" href=""></a>
+            <div class="option">
+              <a href="news.html">НОВОСТИ</a>
+              <div class="sidebar">
+                <a href="#afishaa">АФИША</a>
+              </div>
+              <a href="mer.html">МЭР</a>
+              <a href="project.html">ПРОЕКТЫ</a>
+            </div>
+      </div>
+      <hr>
+    </nav>
+
+    <main>
+      <div class="first">
+          <div class="m_1">
+              <div class="main_img"></div>
+              <div class="text">
+                <p class="comments">20 июня 2021, 16:00</p>
+                <p class="pp_1">СОБЫТИЕ ДНЯ</p>
+              </div>
+              <a class="big_link" href="book.html">Состоялось торжественное открытие магазина сыра «КРЫСЫР».</a>
+              <!-- <h1>Состоялось торжественное открытие магазина сыра «КРЫСЫР».</h1> -->
+          </div>
+          <div class="m_2">
+              <div class="mm_1">
+                <h2>ГЛАВНЫЕ НОВОСТИ</h2>
+                <div class="text_box">
+                  <p class="comments">12 июня 2021, 19:00</p>
+                  <p>Провели самую массовую акцию поддержки малоимущих семей.</p>
+                </div>
+                <div class="text_box">
+                  <p class="comments">15 июня 2021, 21:00</p>
+                  <p>Мэрия провела реконструкцию домов 20 века.</p>
+                </div>
+                <div class="text_box">
+                  <p class="comments">19 июня 2021, 14:00</p>
+                  <p>Официальный праздник «День Анатолия».</p>
+                </div>
+                <a href="news.html">Подробнее</a>
+              </div>
+              <div class="mm_2">
+                <h2>СПЕЦПРОЕКТЫ</h2>
+                <div class="text_box">
+                  <p>В&nbspпериод эпидемии важно знать, что вы&nbspне&nbspбольны</p>
+                  <a href="ill.html">Пройти осмотр</a>
+                </div>
+                <div class="text_box">
+                  <p>Проверьте, есть ли&nbspу&nbspвас&nbspштрафы</p>
+                  <a href="shtraf.html">Проверить</a>
+                </div>
+                <div class="text_box">
+                  <p>Постройте дом своей мечты.</p>
+                  <a href="game.html">Построить</a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="second"  id="afishaa">
+        <h1>АФИША</h1>
+        <div class="option">
+          <p class="a red">День города</p>
+          <p class="ny">Новый год</p>
+          <p class="de">День единства</p>
+          <p class="v">Выставка</p>
+        </div>
+        <div class="option post">
+          <div class="posters p_1" id="a_1"></div>
+          <div class="posters p_2" id="a_2"></div>
+          <div class="posters p_3" id="a_3"></div>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="card_box">
+          <h1>МЭР</h1>
+          <div class="card mer">
+            <p>Фет<br>Таврирович<br>Хвостиков</p>
+            <a href="mer.html">Подробнее</a>
+          </div>
+        </div>
+        <div class="card_box">
+          <h1>КАРТА ГОРОДА</h1>
+          <a class="card map" href="https://grustnoteka.github.io/vot-eto/"></a>
+        </div>
+      </div>
+
+      <div class="fourth">
+        <h1>ПРОЕКТЫ ГОРОДА</h1>
+        <div class="option">
+          <p class="rd">Реконструкция домов</p>
+          <p class="b red">Социальная реклама</p>
+          <p class="nb">Новая больница</p>
+          <p class="sh">Магазин сыра</p>
+        </div>
+        <div class="option post">
+          <div class="posters p_p_1" id="p_1"></div>
+          <div class="posters p_p_2" id="p_2"></div>
+          <div class="posters p_p_3" id="p_3"></div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </main>
+
+    <footer>
+      <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+      <div class="link_box">ПОДДЕРЖКА</div>
+      <div class="link_box">RATCITY 2021</div>
+    </footer>
+
+
+  </body>
+</html>
