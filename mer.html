@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mer</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/mer.css">
+    <style media="screen">
+        .mer_box{
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: flex;
+          margin-top: 60px;
+          flex-wrap: wrap;
+        }
+        .half{
+          width: 50%;
+          flex-direction: column;
+        }
+        .half h2 {
+          margin-bottom: 40px;
+        }
+        p{
+          line-height: 1.4em;
+          padding-bottom:35px;
+          width: 80%;
+        }
+        .mer_img{
+          width: 50%;
+              height: 260px;
+              background-color: gray;
+              border: 1px solid black;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              margin-bottom: 35px;
+        }
+        .posters_box{
+          width: 100%;
+          display:flex;
+          flex-direction: row;
+        }
+        .vibori {
+          display: flex;
+          justify-content: space-around;
+          padding-left: 2em;
+          padding-right:2em;
+          flex-direction: column;
+        }
+        #vm_1{background-image: url("images/vm_01.png"); }
+        #vm_2{background-image: url("images/vm_02.png"); }
+        #vm_3{background-image: url("images/vm_03.png"); }
+        h2{
+          /* width: 100%; */
+        }
+        .vibori .option{
+          /* width: 100vw; */
+          /* height: 100vh; */
+          display: flex;
+          position: relative;
+          }
+          .merch_wraper {
+            width:100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 2%;
+            grid-row-gap: 2%;
+          }
+          .s1{
+            width: 100%;
+            height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 2%;
+            border: 1px solid black;
+          }
+          .s2{
+            width: 47%;
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 2%;
+            border: 1px solid black;
+          }
+          .s3{
+            width: 47%;
+            height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 2%;
+            border: 1px solid black;
+          }
+          #m1{background-image: url("images/merch/1.png");}
+          #m2{background-image: url("images/merch/2.png");}
+          #m3{background-image: url("images/merch/3.png");}
+          #m4{background-image: url("images/merch/4.png");}
+          #m5{background-image: url("images/merch/5.png");}
+          #m6{background-image: url("images/merch/6.png");}
+          #m7{background-image: url("images/merch/7.png");}
+          #m8{background-image: url("images/merch/8.png");}
+
+        }
+    </style>
+  </head>
+  <body>
+        <nav>
+          <div class="line">
+              <a class="logo" href="index.html"></a>
+                <div class="option">
+                  <a href="news.html">НОВОСТИ</a>
+                  <a href="index.html">АФИША</a>
+                  <a href="mer.html">МЭР</a>
+                  <a href="project.html">ПРОЕКТЫ</a>
+                </div>
+          </div>
+          <hr>
+        </nav>
+
+      <main>
+        <div class="mer_box">
+          <div class="half">
+            <h2>МЭР</h2>
+            <h2>Фет Таврирович Хвостиков</h2>
+            <p>Всеми любимый мэр города Крысити. Родился в&nbspдеревне Горбатово в&nbsp1960 году. На&nbspданный момент является лучшим мэром за&nbspвсю историю города.</p>
+            <p>Политическая деятельность началась в&nbsp2020 году после выборов мэра. Это было одно из&nbspсамых масштабных мероприятий, проведенных в&nbspКрысити, в&nbspходе которого были созданы плакаты, поддерживающие разных кандидатов.</p>
+          </div>
+
+          <div class="mer_img mer"></div>
+        </div>
+        <hr>
+        <div class="mer_box vibori">
+          <h2>ВЫБОРЫ МЭРА</h2>
+          <div class="option post">
+            <div class="posters" id="vm_1"></div>
+            <div class="posters" id="vm_2"></div>
+            <div class="posters" id="vm_3"></div>
+          </div>
+        </div>
+        <hr>
+        <div class="mer_box">
+          <div class="half">
+            <h2>МЕРЧ ОТ МЭРА</h2>
+            <p>С&nbsp2021 года запущен мерч с&nbspсимволикой города, который создавался под чутким присмотром мэра. Купить его&nbspможно
+    в&nbspларьках города, поддержки онлайн пока нет.</p>
+          </div>
+            <div class="merch_wraper">
+              <div class="s1" id="m1"></div>
+
+              <div class="s2" id="m2"></div>
+              <div class="s2" id="m3"></div>
+              <div class="s2" id="m4"></div>
+              <div class="s2" id="m5"></div>
+
+              <div class="s1" id="m6"></div>
+
+              <div class="s3" id="m7"></div>
+              <div class="s3" id="m8"></div>
+
+
+            </div>
+
+        </div>
+<hr>
+
+
+
+
+
+      </main>
+      <footer>
+        <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+        <div class="link_box">ПОДДЕРЖКА</div>
+        <div class="link_box">RATCITY 2021</div>
+      </footer>
+
+
+  </body>
+</html>
