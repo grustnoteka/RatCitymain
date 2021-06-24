@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js">
+
+    </script>
+
+    <title>projects</title>
+    <style media="screen">
+      .h_box{
+          width: 90%;
+          height: 500px;
+          color: black;
+          margin: auto;
+          margin-bottom:  60px;
+
+      }
+      .rend, .slide{
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: black;
+        /* background-color: blue; */
+      }
+      .option p {
+        margin-right: 5%;
+        margin-bottom:  60px;
+
+      }
+      main{
+        margin-top: 60px;
+      }
+      .ex_01{background-image: url("images/renders/ex_01.png");}
+      .ex_02{background-image: url("images/renders/ex_02.png");}
+      .ex_03{background-image: url("images/renders/ex_03.png");}
+      .ex_04{background-image: url("images/renders/ex_04.png");}
+
+      .ff_01{background-image: url("images/renders/ff_01.png");}
+      .ff_02{background-image: url("images/renders/ff_02.png");}
+      .ff_03{background-image: url("images/renders/ff_03.png");}
+      .ff_04{background-image: url("images/renders/ff_04.png");}
+      .ff_05{background-image: url("images/renders/ff_05.png");}
+      .ff_06{background-image: url("images/renders/ff_06.png");}
+      .ff_07{background-image: url("images/renders/ff_07.png");}
+      .ff_08{background-image: url("images/renders/ff_08.png");}
+
+      .sf_01{background-image: url("images/renders/sf_01.png");}
+      .sf_02{background-image: url("images/renders/sf_02.png");}
+      .sf_03{background-image: url("images/renders/sf_03.png");}
+      .sf_04{background-image: url("images/renders/sf_04.png");}
+      .sf_05{background-image: url("images/renders/sf_05.png");}
+
+      .fab_01{background-image: url("images/renders/fab_01.png");}
+      .fab_02{background-image: url("images/renders/fab_02.png");}
+      .fab_03{background-image: url("images/renders/fab_03.png");}
+      .fab_04{background-image: url("images/renders/fab_04.png");}
+
+      .block{display: none;}
+
+      .red{color: #C75353;}
+      .option p{
+        cursor: pointer;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.ex, .ff, .sf, .fab').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
+
+        $(".ex_p").click(function(){
+          $(this).addClass("red")
+
+          $(".ex").removeClass("block");
+          $(".ff, .sf, .fab").addClass("block");
+        });
+        $(".ff_p").click(function(){
+          $(this).addClass("red")
+
+          $(".ff").removeClass("block");
+          $(".ex, .sf, .fab").addClass("block");
+        });
+        $(".sf_p").click(function(){
+          $(this).addClass("red")
+
+          $(".sf").removeClass("block");
+          $(".ex, .ff, .fab").addClass("block");
+        });
+        $(".fab_p").click(function(){
+          $(this).addClass("red")
+
+          $(".fab").removeClass("block");
+          $(".ex, .ff, .sf").addClass("block");
+        });
+      })
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="line">
+          <a class="logo" href="index.html"></a>
+            <div class="option">
+              <a href="news.html">НОВОСТИ</a>
+              <a href="index.html">АФИША</a>
+              <a href="mer.html">МЭР</a>
+              <a href="project.html">ПРОЕКТЫ</a>
+            </div>
+      </div>
+      <hr>
+    </nav>
+    <main>
+
+      <h2>ПРОЕКТЫ ГОРОДА</h2>
+      <div class="option">
+        <p class="ex_p red">Вид снаружи</p>
+        <p class="ff_p">1 этаж</p>
+        <p class="sf_p">2 этаж</p>
+        <p class="fab_p">Фабрика</p>
+      </div>
+
+      <div class="h_box">
+        <div class="ex">
+          <div class="slide ex_01" id=""></div>
+          <div class="slide ex_02" id=""></div>
+          <div class="slide ex_03" id=""></div>
+          <div class="slide ex_04" id=""></div>
+        </div>
+        <div class="ff block">
+          <div class="slide ff_01"></div>
+          <div class="slide ff_02"></div>
+          <div class="slide ff_03"></div>
+          <div class="slide ff_04"></div>
+          <div class="slide ff_05"></div>
+          <div class="slide ff_06"></div>
+          <div class="slide ff_07"></div>
+          <div class="slide ff_08"></div>
+        </div>
+        <div class="sf block">
+          <div class="slide sf_01"></div>
+          <div class="slide sf_02"></div>
+          <div class="slide sf_03"></div>
+          <div class="slide sf_04"></div>
+          <div class="slide sf_05"></div>
+        </div>
+        <div class="fab block">
+          <div class="slide fab_01"></div>
+          <div class="slide fab_02"></div>
+          <div class="slide fab_03"></div>
+          <div class="slide fab_04"></div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </main>
+  <hr>
+      <footer>
+        <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+        <div class="link_box">ПОДДЕРЖКА</div>
+        <div class="link_box">RATCITY 2021</div>
+      </footer>
+  </body>
+</html>
