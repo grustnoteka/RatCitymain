@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style media="screen">
+    .draggable { width: 90px; height: 80px; padding: 5px; float: left; margin: 0 10px 10px 0; font-size: .9em; }
+    .ui-widget-header p, .ui-widget-content p { margin: 0; }
+    #snaptarget { height: 140px; }
+     #containment-wrapper { width: 95%; height:590px;display: block;
+       /* border:2px solid #ccc;  */
+       padding: 10px; }
+       .triangle{
+         width: 200px;
+         height: 200px;
+         background-image: url("images/game/triangle.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+
+       }
+       .square{
+         width: 100px;
+         height: 100px;
+         background-image: url("images/game/square.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+       }
+       .circle{
+         width: 100px;
+         height: 100px;
+         background-image: url("images/game/circle.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+
+       }
+       .square_b{
+         width: 200px;
+         height: 200px;
+         background-image: url("images/game/square_b.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+
+       }
+    </style>
+    <script type="text/javascript">
+    $( function() {
+      $( ".draggable5" ).draggable({  containment: "#containment-wrapper", scroll: false  });
+    } );
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="line">
+          <a class="logo" href="index.html"></a>
+            <div class="option">
+              <a href="news.html">НОВОСТИ</a>
+              <a href="index.html">АФИША</a>
+              <a href="mer.html">МЭР</a>
+              <a href="project.html">ПРОЕКТЫ</a>
+            </div>
+      </div>
+      <hr>
+    </nav>
+    <main>
+
+      <div id="containment-wrapper">
+              <div  class="draggable5 draggable ui-widget-content triangle"></div>
+              <div  class="draggable5 draggable ui-widget-content triangle"></div>
+              <div  class="draggable5 draggable ui-widget-content circle"></div>
+              <div  class="draggable5 draggable ui-widget-content circle"></div>
+              <div  class="draggable5 draggable ui-widget-content square"></div>
+              <!-- <div  class="draggable5 draggable ui-widget-content  triangle"></div> -->
+              <div  class="draggable5 draggable ui-widget-content square"></div>
+              <div  class="draggable5 draggable ui-widget-content square"></div>
+              <div  class="draggable5 draggable ui-widget-content square_b"></div>
+              <!-- <div  class="draggable5 draggable ui-widget-content square_b"></div> -->
+              <!-- <div  class="draggable5 draggable ui-widget-content  triangle"></div> -->
+              <!-- <div  class="draggable5 draggable ui-widget-content square"></div> -->
+              <div  class="draggable5 draggable ui-widget-content square_b"></div>
+              <div  class="draggable5 draggable ui-widget-content circle"></div>
+              <!-- <div  class="draggable5 draggable ui-widget-content circle"></div> -->
+
+
+
+      </div>
+
+<hr>
+
+
+
+    </main>
+    <footer>
+      <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+      <div class="link_box">ПОДДЕРЖКА</div>
+      <div class="link_box">RATCITY 2021</div>
+    </footer>
+  </body>
+</html>
