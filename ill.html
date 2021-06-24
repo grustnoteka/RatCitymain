@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title></title>
+    <style media="screen">
+
+      .card_wrapper{
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .pattern {
+        width: 270px;
+        height: 410px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("images/spetial/ill_p.svg");
+      }
+      .chat_box{
+        width: 34%;
+        height: 320px;
+        background-color: white;
+        border: 3px solid black;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+      .rat{
+        width: 235px;
+        height: 460px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("images/spetial/ill_m.svg");
+        margin-top:60px;
+      }
+      .ansv_box{
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        font-family: "Montserrat";
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      .ansv_box p, .ansv_box a{
+            margin-bottom: 10px;
+      }
+      .ansv_box p:hover, .ansv_box a:hover {
+        color: #C75353;
+        transition: .2s;
+      }
+      .r2{
+        /* display: none; */
+      }
+      .r2 .ansv_box a {
+        height: 30px;
+
+      }
+      .block{
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".ansv_box p").click(function(){
+            $(".r1,.r2").toggleClass("block")
+          })
+        })
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="line">
+          <a class="logo" href=""></a>
+            <div class="option">
+              <a href="news.html">НОВОСТИ</a>
+              <a href="index.html">АФИША</a>
+              <a href="mer.html">МЭР</a>
+              <a href="project.html">ПРОЕКТЫ</a>
+            </div>
+      </div>
+      <hr>
+    </nav>
+      <main>
+        <div class="card_wrapper">
+          <div class="pattern"></div>
+          <div class="chat_box">
+            <div class="r1">
+              <p>Здраствуйте! <br>Что-то болит?</p>
+              <div class="ansv_box">
+                <p>> Ну да</p>
+                <p>> Отстаньте</p>
+              </div>
+            </div>
+            <div class="r2 block">
+              <p>Ну пусть не болит.<br>Всего хорошего!</p>
+              <div class="ansv_box">
+                <a href="index.html">> Ура</a>
+                <a href="index.html">> Спасибо</a>
+              </div>
+            </div>
+          </div>
+          <div class="rat"></div>
+
+        </div>
+        <hr>
+      </main>
+    <footer>
+      <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+      <div class="link_box">ПОДДЕРЖКА</div>
+      <div class="link_box">RATCITY 2021</div>
+    </footer>
+
+  </body>
+</html>
