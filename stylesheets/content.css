@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'saygon';
+  src: url('saygon.ttf');
+}
+body{
+  background-color: #FFFDEF;
+  font-family: 'saygon';
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  padding-left: calc(100vw / 21);
+  padding-right: calc(100vw / 21);
+
+}
+nav{
+  height: 150px;
+  justify-content: space-between;
+}
+a{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  align-items: center;
+  transition: .6s;
+  text-decoration: none;
+
+}
+hr{
+  width: 100%;
+  /* size: 4; */
+  color: black;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  background-color: black;
+  height: 8px;
+  }
+
+  .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: calc(100vw / 21); */
+    /* margin-right: calc(100vw / 21); */
+    align-items: center;
+  }
+  .option{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+
+    /* margin-left: 2vw; */
+  }
+  .option a{
+    margin-left: 7vw;
+  }
+  .logo{
+    width: 300px;
+    height: 90px;
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .first{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+    margin-top: 80px;
+    grid-template-columns: 3fr 2fr 1fr;
+    border-bottom: solid black 8px;
+
+  }
+  .m_1{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+  }
+  .m_2{
+    /* width:2fr; */
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+  }
+  .mm_1{
+    /* width:1fr; */
+    display: flex;
+    width: 60%;
+    height: 75%;
+    flex-direction: column;
+    border-right: 8px solid black;
+    justify-content: space-between;
+  }
+  .mm_2{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+
+  }
+  .main_img {
+    width: 45vw;
+    height: 28vw;
+    background-image: url('../images/main_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1, .big_link{
+    font-size: 36px;
+    display: flex;
+    margin-top: 30px;
+    text-decoration: none;
+
+  }
+  h2{
+    font-size: 26px;
+    display: flex;
+    margin-bottom: 60px;
+  }
+  /* .mm_1 .text_box:first-child p:first-child{
+    margin-top: 0;
+  } */
+  .mm_2 h2 {
+    margin-bottom: 80px;
+  }
+  .comments{
+    display: flex;
+    font-size: 14px;
+    color: #C75353;
+    margin-top: 30px;
+  }
+  .second {
+    width: 100%;
+    border-bottom: solid black 8px;
+
+    /* height: 800px; */
+  }
+  .m_2  {
+    width: 49%;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .pp_1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 600;
+  }
+  .mm_1 .text_box{
+    border-bottom: solid black 1px;
+    width: 90%;
+    line-height: 1.4rem;
+  }
+  .mm_1 p {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mm_1 a {
+    margin-top:50px;
+  }
+  .mm_1 a, .mm_2 a {
+    font-size: 16px;
+    text-decoration: none;
+    height: 90px;
+  }
+  a:hover {
+    color: #C75353;
+    transition: .2s;
+  }
+  .mm_2 .text_box p {
+    margin-top: 10px;
+  }
+  .second .option,
+  .fourth .option {
+    margin-top:30px;
+  }
+  .second .option p,
+  .fourth .option p {
+    margin-right: 5%
+  }
+  .posters {
+    /* width: 22%; */
+    /* height: calc(25% * 1.5); */
+    width: 25%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  }
+
+  .a, .b, .vm, .ny, .de, .v, .rd, .nb, .sh {
+    cursor: pointer;
+  }
+
+
+
+  #a_1,#a_2,#a_3,
+  #b1,#b2,#b3,
+  #vm_01,#vm_02,#vm_03,
+  #ny_01,#ny_02,#ny_03,
+  #de_01,#de_02,#de_03,
+  #v_01,#v_02,#v_03,
+  #rd_01,#rd_02,#rd_03,
+  #nb_01,
+  #lost{
+
+  }
+
+
+
+
+  /* день города */
+  #a_1{background-image: url('../images/a1.png');}
+  #a_2{background-image: url('../images/a2.png');}
+  #a_3{background-image: url('../images/a3.png');}
+  /* Социальная реклама */
+  #b1{background-image: url('../images/b1.png');}
+  #b2{background-image: url('../images/b2.png');}
+  #b3{background-image: url('../images/b3.png');}
+  /* выборы мэра */
+  #vm_01{background-image: url('../images/vm_01.png');}
+  #vm_02{background-image: url('../images/vm_02.png');}
+  #vm_03{background-image: url('../images/vm_03.png');}
+  /* новый год */
+  #ny_01{background-image: url('../images/ny_01.png');}
+  #ny_02{background-image: url('../images/ny_02.png');}
+  #ny_03{background-image: url('../images/ny_03.png');}
+  /* день единства */
+  #de_01{background-image: url('../images/de_01.png');}
+  #de_02{background-image: url('../images/de_02.png');}
+  #de_03{background-image: url('../images/de_03.png');}
+  /* выставка */
+  #v_01{background-image: url('../images/v_01.png');}
+  #v_02{background-image: url('../images/v_02.png');}
+  #v_03{background-image: url('../images/v_03.png');}
+  /* реконструкция домов */
+  #rd_01{background-image: url('../images/rd_01.png');}
+  #rd_02{background-image: url('../images/rd_02.png');}
+  #rd_03{background-image: url('../images/rd_03.png');}
+  /* новая больница */
+  #nb_01{background-image: url('../images/nb_01.png');}
+  #lost{background-color: #FFFDEF;}
+
+  .post {
+    width: 100%;
+    height: 500px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  .third{
+    width: 100%;
+    border-bottom: solid black 8px;
+    display: flex;
+    column-gap: 3%;
+  }
+  .card_box{
+    width:48.5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .card {
+    margin-top: 20px;
+
+    width: 100%;
+    height: 260px;
+    border: solid 3px black;
+  }
+  .map{
+    background-image: url('../images/mini_map.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mer {
+    background-image: url('../images/mer_card.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .mer p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .card  a {
+    font-size: 16px;
+  text-decoration: none;
+  height: 50px;
+  margin-left: 10px;
+  }
+  .fourth{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid black 8px;
+  }
+
+  #p_1{background-image: url('../images/b1.png');}
+  #p_2{background-image: url('../images/b2.png');}
+  #p_3{background-image: url('../images/b3.png');}
+
+  .link_box{
+    width: 30%;
+    height: auto;
+
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  align-items: center;
+  transition: .6s;
+  text-decoration: none;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
